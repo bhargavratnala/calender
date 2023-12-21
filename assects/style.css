@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: #fff;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.title{
+    position: relative;
+    font-size: 3rem;
+    font-weight: bold;
+    bottom: 200px;
+    margin: 10px;
+}
+.month-year{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    border-bottom: 3px solid #d1d1d1;
+}
+.months{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2rem;
+    border-bottom: 3px solid #d1d1d1;
+}
+.month-board{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-around;
+}
+.month-board li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    margin: 2px;
+    border-radius: 2px;
+    width: calc(100%/4 - 5px);
+    background-color: #e5e5e5;
+    cursor: pointer;
+}
+.month-board li:hover{
+    background-color: #fff;
+    border: 1px solid #949494;
+    box-sizing: 0 0 33px 12px #000;
+}
+#month, #year{
+    margin: 5px 10px;
+}
+.arrow{
+    width: 30px;
+    height: 30px;
+    transform: rotate(calc(var(--i)*180deg));
+    margin: 5px;
+    cursor: pointer;
+}
+#year-drop{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.main-frame{
+    display: block;
+    min-width: 400px;
+    position: absolute;
+    max-width: 600px;
+    width: 50%;
+    padding: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 5px 2px black;
+    border-radius: 10px;
+}
+.year-frame{
+    display: none;
+}
+.year{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-around;
+}
+.year li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    margin: 2px;
+    border-radius: 2px;
+    width: calc(100%/5 - 5px);
+    background-color: #e5e5e5;
+    cursor: pointer;
+}
+.year li:hover{
+    background-color: #fff;
+    border: 1px solid #949494;
+    box-sizing: 0 0 33px 12px #000;
+}
+.days{
+    display: flex;
+    width: 100%;
+    margin: 8px 0;
+    justify-content: space-around;
+    list-style: none;
+}
+.days li{
+    width: calc(100%/7);
+    display: flex;
+    justify-content: center;
+}
+.date{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-around;
+}
+.date li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    margin: 2px;
+    border-radius: 2px;
+    width: calc(100%/7 - 5px);
+    background-color: #e5e5e5;
+    cursor: pointer;
+}
+.date li:hover{
+    background-color: #fff;
+    border: 1px solid #949494;
+    box-sizing: 0 0 33px 12px #000;
+}
+.holiday{
+    color: red !important;
+}
+.non-main{
+    opacity: 0.6;
+}
+.present{
+    border: 1px solid #000;
+}
