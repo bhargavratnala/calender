@@ -10,7 +10,7 @@ To get started with the Calendar Project, follow these steps:
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/calendar.git
+    git clone https://github.com/bhargavratnala/calendar.git
     ```
 2. Getting Started:
     ```sh
